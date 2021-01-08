@@ -1,0 +1,78 @@
+@import 'config';
+$dark: #0095a0;
+$orange: #d9c231;
+$lime: #92c335;
+$brown: brown;
+body {
+    background-color: white;
+    height: 2000px;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: repeat(10, 10fr);
+    padding: 0px;
+    margin: 0px;
+    grid-row-gap: 2px;
+}
+.cursor {
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+}
+div {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 100vh;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#fl {
+    background-color: $dark;
+    grid-area: 1/1/3/2;
+    color: white;
+}
+#fr {
+    background-color: $orange;
+    grid-area: 1/2/2/3;
+    height: 50vh;
+    color: white;
+}
+#sr {
+    background-color: $lime;
+    grid-area: 2/2/3/3;
+    height: 50vh;
+    color: white;
+}
+#thm {
+    grid-area: 3/1/4/3;
+}
+#fom {
+    grid-area: 4/1/5/3;
+}
+#fim {
+    grid-area: 5/1/6/3;
+}
+#sim {
+    grid-area: 6/1/7/3;
+}
+#sem {
+    grid-area: 7/1/8/3;
+}
+#em {
+    grid-area: 8/1/9/3;
+}
+#nm {
+    grid-area: 9/1/10/3;
+}
+#tm {
+    grid-area: 10/1/11/3;
+}
